@@ -6,6 +6,7 @@
 
 body {
   width: 375px;
+  background-color: #f2f2f9;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 48px;
+  background-color: white;
 }
 
 header .logo {
@@ -28,12 +30,14 @@ header img {
 
 .headline-section {
   background-image: url(./images/header-shapes\ mobile@2x.svg);
-  height: 594px;
+  height: 593px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   border-bottom-left-radius: 90px;
+  background-color: white;
+
 }
 
 .heading {
@@ -68,4 +72,258 @@ header img {
   width: 171px;
   align-self: flex-start;
   margin-left: 23px;
+}
+
+.Workportion{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: #f2f2f9;
+
+}
+
+.cards{
+  margin-top: 114px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px;
+  width: 327px;
+  height: 552px;
+  border-radius: 16px;
+  border: 1px solid  #DFE1E6;
+  background:  #FFF;
+  padding: 16px ;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards .leftblock{
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftblock-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.frame{
+  width: 236px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+}
+.frame span{
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.frame img{
+  width: 8px;
+  height: 15px;
+}
+
+.frame p{
+  color:#7A869A;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.card-text{
+  width: 295px;
+  height: 76px;
+  color: #344563;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tags{
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: 15px;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.tags li{
+  display: flex;
+  padding: 4px 12px;
+  align-items: center;
+  list-style: none;
+  border-radius: 8px;
+  background: #EBEBFF;
+
+}
+
+.tags span{
+  color: #6070FF;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.36px;
+}
+
+.card-action{
+  width: 100px;
+  height: 48px;
+  vertical-align: middle;
+  padding: 0px 15px;
+  margin-top: 18px;
+  line-height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070FF;
+  font-size: 17px;
+  font-weight: 500;
+  color: #396df2;
+  align-self: flex-start;
+  margin-left: 16px;
+  margin-top: 25px;
+}
+
+.Aboutmyself{
+  margin-top: 170px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height:1,062.15px;
+  width: 390px;
+  border-top-right-radius: 90px;
+  background-color: white;
+}
+
+.Aboutmyself .top{
+  padding: 114px 24px 114px 24px;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+width: 327px;
+height: 250px;
+}
+
+.top-text{
+  width: 327px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.Aboutmyself .top .top-text h2{
+  color:  #172B4D;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.top-description{
+  width: 327px;
+  height: 147px;
+  color: #344563;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.social{
+  width: 200px;
+  height: 80px;
+  gap:16px;
+}
+
+.social .connect-button{
+  width: 130px;
+  height: 24px;
+  gap: 8px;
+  line-height: 24px;
+  margin-bottom: 21px;
+  margin-left: 0px;
+} 
+
+.top .media-icon{
+  margin-left: 10px;
+}
+
+.normal-button .card-action{
+  width: 162px;
+  height: 48px;
+  margin-left: 0px;
+}
+
+.skill-list{
+  width: 327px;
+  height:464.15px;
+}
+
+.frame1{
+  width: 327px;
+  height: 72px;
+  padding: 16px, 26px, 0px, 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame1 .text1{
+  width: 237px;
+  height: 24px;
+  padding: 24px 78px 0px 12px;
+  align-items: center;
+  color: #000;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.frame1 img{
+  margin-top: 40px;
+  width: 24px;
+  height: 24px;
+}
+.sepration{
+  width: 327px;
+height: 1px;
+flex-shrink: 0;
+color: #DFE1E6;
+margin-bottom: 0px;
+}
+
+.lan-list{
+  list-style: none;
+}
+
+.lan-list div{
+  display: flex;
+  background-color: #f2f2f9;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  
+}
+
+.text2{
+  display: flex;
+width: 215px;
+height: 24px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #253858;
+font-size: 15px;
+font-weight: 500;
+line-height: 20px;
+margin-left: 10px;
+margin-top: 15px;
 }
