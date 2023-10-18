@@ -4,9 +4,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.deskmenu {
+  display: none;
+}
+
 body {
   width: 375px;
-  background-color: #f2f2f9;
+  position: absolute;
 }
 
 header {
@@ -14,29 +18,28 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 48px;
-  background-color: white;
 }
 
-header .logo {
+.logo {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
   padding-left: 12px;
 }
 
-header img {
+.hamburger {
   margin-right: 24px;
+  position: sticky;
 }
 
-.headline-section {
-  background-image: url(./images/header-shapes\ mobile@2x.svg);
-  height: 593px;
+.head {
+  background-image: url(./images/header-shapes\ mobile.png);
+  height: 594px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   border-bottom-left-radius: 90px;
-  background-color: white;
 }
 
 .heading {
@@ -48,7 +51,7 @@ header img {
   line-height: 52px;
 }
 
-.text {
+.paragraph {
   font-size: 16px;
   font-weight: 400;
   color: #344563;
@@ -57,78 +60,41 @@ header img {
 }
 
 .connect-button {
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   color: #7f8cff;
-  text-transform: uppercase;
   align-self: flex-start;
   margin-left: 23px;
 }
 
-.media-icon {
+.social-icons {
   display: flex;
   justify-content: space-between;
-  width: 171px;
   align-self: flex-start;
+  width: 171px;
   margin-left: 23px;
 }
 
-.Workportion {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background: #f2f2f9;
-}
-
-.cards {
-  margin-top: 114px;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding: 16px;
-  width: 327px;
-  height: 552px;
-  border-radius: 16px;
-  border: 1px solid  #dfe1e6;
-  background: #fff;
+.worksection {
   display: flex;
   flex-direction: column;
+  padding: 114px 24px 114px 24px;
+  gap: 88px;
   align-items: center;
 }
 
-.cards .leftblock {
-  width: 295px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.leftblock-detail {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.frame {
-  width: 236px;
-  height: 32px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.frame span {
+.highlight {
+  list-style: none;
   color: #344563;
-  font-size: 13px;
   font-weight: 600;
-  line-height: 16px;
 }
 
-.frame img {
-  width: 8px;
-  height: 15px;
-}
-
-.frame p {
+.cap {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -20px;
+  padding-right: 40px;
   color: #7a869a;
   font-size: 13px;
   font-style: normal;
@@ -136,191 +102,125 @@ header img {
   line-height: 16px;
 }
 
-.card-text {
-  width: 295px;
-  height: 76px;
-  color: #344563;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.tags {
+.skill {
   display: flex;
-  align-items: center;
-  align-self: flex-start;
-  margin-left: 15px;
-  gap: 8px;
-  margin-top: 13px;
-}
-
-.tags li {
-  display: flex;
-  padding: 4px 12px;
-  align-items: center;
   list-style: none;
-  border-radius: 8px;
-  background: #ebebff;
 }
 
-.tags span {
+.s1 {
+  border: solid 1px;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #ebebff;
+  border-color: #ebebff;
   color: #6070ff;
   font-size: 12px;
+  font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.36px;
+  margin-left: 4px;
 }
 
-.card-action {
-  width: 100px;
-  height: 48px;
-  vertical-align: middle;
-  padding: 0 15px;
-  line-height: 48px;
-  border-radius: 8px;
-  border: 1px solid #6070ff;
-  font-size: 17px;
-  font-weight: 500;
-  color: #396df2;
-  align-self: flex-start;
-  margin-left: 16px;
-  margin-top: 25px;
-}
-
-.Aboutmyself {
-  margin-top: 170px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  height: 1062.15px;
-  width: 375px;
-  border-top-right-radius: 90px;
-  background-color: white;
-}
-
-.Aboutmyself .top {
-  padding: 114px 24px 114px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  width: 327px;
-  height: 250px;
-}
-
-.top-text {
-  width: 327px;
-  height: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.Aboutmyself .top .top-text h2 {
-  color: #172b4d;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-}
-
-.top-description {
-  width: 327px;
-  height: 147px;
-  color: #344563;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.social {
-  width: 200px;
-  height: 80px;
-  gap: 16px;
-}
-
-.social .connect-button {
-  width: 130px;
-  height: 24px;
-  gap: 8px;
-  line-height: 24px;
-  margin-bottom: 21px;
-  margin-left: 0;
-}
-
-.top .media-icon {
-  margin-left: 10px;
-}
-
-.normal-button .card-action {
-  width: 162px;
-  height: 48px;
-  margin-left: 0;
-}
-
-.skill-list {
-  width: 327px;
-  height: 464.15px;
-}
-
-.frame1 {
-  width: 327px;
-  height: 72px;
-  padding: 16px, 26px, 0, 12px;
+.card {
   display: flex;
   justify-content: space-between;
+  align-self: flex-start;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+  gap: 12px;
 }
 
-.frame1 .text1 {
-  width: 237px;
-  height: 24px;
-  padding: 24px 78px 0 12px;
+.poster {
+  align-self: center;
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.btn2 {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  gap: 12px;
+  margin-top: 10px;
+  color: #6070ff;
+  background-color: white;
+  margin-right: 150px;
+  margin-bottom: 16px;
+}
+
+.longheading {
+  margin-right: 30px;
+}
+
+.about-me-section {
+  display: inline-flex;
+  padding: 114px 24px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.connect-button1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
+  align-self: flex-start;
+}
+
+.lang-head {
+  display: flex;
+  padding: 16px 26px 16px 12px;
   align-items: center;
-  color: #000;
-  font-size: 23px;
+  gap: 12px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  margin-top: 15px;
 }
 
-.frame1 img {
-  margin-top: 40px;
-  width: 24px;
-  height: 24px;
-}
-
-.sepration {
-  width: 327px;
-  height: 1px;
-  flex-shrink: 0;
-  color: #dfe1e6;
-  margin-bottom: 0;
-}
-
-.lan-list {
-  list-style: none;
-}
-
-.lan-list div {
+.languages {
   display: flex;
-  background-color: #f2f2f9;
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-
-.text2 {
-  display: flex;
-  width: 215px;
-  height: 24px;
+  padding: 12px;
   flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #253858;
+  gap: 12px;
+}
+
+.lang {
+  display: flex;
+  list-style: none;
+  padding: 9px 12px 9.716px 12px;
+  gap: 18px;
+  border-radius: 8px;
+  background: var(--neutrals-n-10, #f7f7f9);
+}
+
+.lang-name {
+  padding-left: 10px;
+  margin-top: 15px;
   font-size: 15px;
+  font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  margin-left: 10px;
-  margin-top: 15px;
+}
+
+.lang-foot {
+  display: flex;
+  padding: 16px 26px 16px 12px;
+  gap: 12px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-bottom: solid 1px #dfe1e6;
 }
 
 .c-back {
@@ -328,7 +228,7 @@ header img {
 }
 
 .contact-me {
-  background-image: url("./images/contact\ form\ shapes-mobile.svg");
+  background-image: url("./images/contact\ form\ shapes-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
@@ -363,7 +263,7 @@ header img {
   text-align: center;
 }
 
-.contact-me .form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -404,5 +304,161 @@ header img {
   line-height: 24px;
   letter-spacing: 0.51px;
   border: none;
-  margin-top: 4px;
+  margin-top: 4.1 px;
+}
+
+@media screen and (min-width: 476px) {
+  p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  body {
+    width: 1440px;
+    height: 1080px;
+    position: absolute;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .deskmenu {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+  }
+
+  header {
+    margin: 0 143px 0 143px;
+  }
+
+  .deskmenu li {
+    margin: 12px;
+    color: #344563;
+  }
+
+  .head {
+    background-image: url(./images/Header\ bg.svg);
+    align-items: normal;
+  }
+
+  .heading {
+    margin: 289px 260px 0 260px;
+    width: 400px;
+  }
+
+  .paragraph {
+    margin: 0 260px 0 260px;
+    width: 920px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .connect-button {
+    margin: 0 260px;
+  }
+
+  .social-icons {
+    margin: 0 260px 265px;
+  }
+
+  .card {
+    width: 1156px;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+
+  .cardimg {
+    width: 544px;
+    height: 448px;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+
+  .cardtext {
+    display: inline-flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .worksection {
+    display: inline-flex;
+    padding: 142px;
+    flex-direction: column;
+    align-items: center;
+    gap: 142px;
+  }
+
+  .cap {
+    gap: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .aboutmeicons {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 171px;
+    margin-left: 0;
+  }
+
+  .aboutmetext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 455px;
+  }
+
+  .btn21 {
+    margin-top: -238px;
+  }
+
+  .about-me-section {
+    flex-direction: row;
+    margin: 166px 0 166px 143px;
+  }
+
+  .lang {
+    flex-direction: column;
+    width: 75px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .lang-head {
+    width: 582px;
+  }
+
+  .languages {
+    flex-direction: row;
+  }
+
+  .card2 {
+    flex-direction: row-reverse;
+  }
+
+  .contact-me {
+    background-image: url(./images/contact\ form\ background\ shapes.svg);
+    width: 1440px;
+    height: 846px;
+    background-color: #6070ff;
+    gap: 12px;
+  }
+
+  .contact-me p {
+    width: 569px;
+    height: 102px;
+  }
 }
